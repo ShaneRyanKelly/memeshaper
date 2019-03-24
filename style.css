@@ -1,0 +1,43 @@
+body {
+  background-image: url("assets/background.gif");
+  background-repeat: repeat;
+}
+.jumbotron {
+  background-image: url("assets/jumbotron.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content {
+  width: 100%;
+  background-color: #FFFFFA;
+  border: 20px solid #000000;
+}
+
+.button {
+  border: 7px solid #000000;
+}
+
+img {
+  max-width: 100%;
+}
+.ui {
+  display:block;
+}
+.col-sm {
+  max-width: 200px;
+}
+
+.img-responsive {margin:0 auto; display:block;}
+
+.col-sm-3 {max-height: inherit;}
+
+.controls {visibility: hidden;}
+
+.page {padding-top: 50px;}
+
+.p-img {
+  max-height:216px;
+  max-width:284px;
+}
