@@ -75,7 +75,13 @@ function storeclick(){
            url: "./scripts/getstore.php",
            cache: false,
            success: function(result){
-                 $(".canvas").html(result);
+                 console.log(result);
+                 result = JSON.parse(result);
+                 var itemname = '<h1>' + result[0].itemname + "</h1>";
+                 var itemimg = '<img src="' + result[0].imagepath + '" class="img-thumbnail img-responsive" \>';
+                 var itemdescription = '<h3>' + result[0].itemdescription + "</h3>";
+                 var page = itemname+itemimg+itemdescription;
+                 $('.canvas').html(page);
            }
   });
 }
